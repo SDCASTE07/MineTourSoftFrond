@@ -5,11 +5,11 @@ const path = require('path');
 const app = express();
 
 // Serve only the static files form the dist directory
-app.use(express.static('./dist/mine-tour-soft'));
+app.use(express.static(__dirname +'/dist/mine-tour-soft'));
 
 app.get('/*', (req, res) =>
-    res.sendFile('index.html', {root: 'dist/mine-tour-soft/'}),
+    res.sendFile(path.join(__dirname,'dist/mine-tour-soft','index.html'))
 );
 
 // Start the app by listening on the default Heroku port
-app.listen(process.env.PORT || 8080);
+app.listen(process.env.PORT || 5000);
