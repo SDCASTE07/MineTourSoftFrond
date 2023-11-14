@@ -5,5 +5,5 @@
 
 export const environment = {
   production: false,
-  url:"https://back-mtsoft-08519fdd0109.herokuapp.com/"
+  url:"https://back-mtsoft-08519fdd0109.herokuapp.com"
 };
