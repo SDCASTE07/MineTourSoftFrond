@@ -68,7 +68,7 @@ export class ComponentsComponent implements OnInit {
             };
         this.componentsService.gurdarReserva(body).subscribe(rest=>{
             console.log(rest)
-            alert("reserva exitosa")
+            alert("exito:en unos minutos un asesor confirmara su reserva, le llegara confirmacion a su correo")
         })
      }
    }

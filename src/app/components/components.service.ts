@@ -14,6 +14,10 @@ export class ComponentsService {
     const url =`${environment.url}/registro`;  
     return this.http.post(url, param) 
   }
+  confirmar(param : any): Observable<any> {
+    const url =`${environment.url}/registro/confirmacion`;
+    return this.http.post(url, param) 
+  }
   
   
   listar(): Observable<any> {
