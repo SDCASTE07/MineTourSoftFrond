@@ -44,8 +44,7 @@ export class DashComponent implements OnInit {
   }
   promedio():number{    
     const num =this.sumarVisitantes() / this.contarTodosLosObjetos()
-    return Number(num.toFixed(2));
-    
+    return Number(num.toFixed(2));    
   }
 }
 
